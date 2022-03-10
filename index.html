@@ -5,29 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Google fonts -->
-    
+    <!-- Google fonts and Font Awesome -->
+    <script src="https://kit.fontawesome.com/a90370d8ae.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Footy Quiz</title>
 </head>
 <body>
-    <h1 class="heading">Footy Quiz <i class="fa-solid fa-question"></i></h1>
-
+    
+    <!-- Quiz area, questions, answers, submit/reset -->
     <div class="quiz-container">
-        <div class="quiz-choice">Choose your quiz</div>
+        <h1 class="heading">Footy Quiz <i class="fa-solid fa-question"></i></h1>
+        <div class="quiz-choice">
+            <h2>Choose your quiz</h2>
+
+            <button class="big btn--big btn--blue">90's <i class="fa-solid fa-futbol"></i></button>
+            <button class="big btn--big btn--Yellow">00's <i class="fa-solid fa-person-running"></i></button>
+            <button class="big btn--big btn--Green">10's <i class="fa-solid fa-trophy"></i></button>
+            <button class="big btn--big btn--Red">20's <i class="fa-solid fa-medal"></i></button>
+        </div>
         
-        <div class="question-area">The text containing the question</div>
+        <div class="question-area">
+            <h2>Question</h2>
+
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a-answer">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b-answer">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c-answer">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d-answer">Answer</label>
+                </li>
+            </ul>
+        </div>
         
-        <div class="score">
+        <div class="score-area">
             <p class="score-count">Correct answers <span id="scores">0</span></p>
             <p class="score-count">Incorrect answers <span id="scores">0</span></p>
         </div>
-    </div>
 
-    <!-- Font Awesome script -->
-    <script src="https://kit.fontawesome.com/a90370d8ae.js" crossorigin="anonymous"></script>
+        <button id="submit">Submit</button>
+        <button id="reset">Reset</button>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>

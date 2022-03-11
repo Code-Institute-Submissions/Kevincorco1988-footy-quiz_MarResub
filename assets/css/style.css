@@ -20,6 +20,7 @@ body {
     padding: 4rem,
 }
 
+
 .quiz-container {
     background-color: #fff;
     border-radius: 10px;
@@ -51,7 +52,7 @@ button:hover {
 }
 
 ul {
-    list-style-type: upper-alpha;
+    list-style-type: none;
     padding-right: 200px;
 }
 
